@@ -6,6 +6,7 @@
   "scripts": {
     "start:similar": "node -r ts-node/register --env-file='.env' src/emb/similar.ts",
     "start:chroma": "node -r ts-node/register --env-file='.env' src/chroma/student.ts",
+    "start:pinecone": "node -r ts-node/register --env-file='.env' src/pinecone/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -17,6 +18,7 @@
     "typescript": "^5.6.3"
   },
   "dependencies": {
+    "@pinecone-database/pinecone": "^3.0.3",
     "chromadb": "^1.9.2",
     "openai": "^4.68.1",
     "tiktoken": "^1.0.17"
